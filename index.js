@@ -1,4 +1,3 @@
-
 // ### პროექტი 57 - Password Generator
 // შექმენით პაროლების გენერატორი პროგრამა, რომელიც მომხმარებელს შეეკითხება პაროლის მინიმალური
 // სიმბოლოების რაოდენობას, სპეციალური სიმბოლოების რაოდენობასა და რიცხვების რაოდენობას პაროლში.
@@ -53,7 +52,7 @@
 //         და არა "strawberry"). ყურადღება არ მიაქციოთ იმ შემოსულ მონაცემებს, რომელიც არ არის ხილი.
 
 // - FDA-ს ხილის პოსტერი: 
-// [https://www.fda.gov/food/food-labeling-nutrition/raw-fruits-poster-text-version-accessible-version)
+// [  https://www.fda.gov/food/food-labeling-nutrition/raw-fruits-poster-text-version-accessible-version)
 
 // მაგალითად:
 // ```shell
@@ -62,6 +61,41 @@
 // > Item: banana
 // > Calories: 110
 // > Item: chocolate
+// let fruits = [
+//     {
+//         "name": "apple",
+//         "calorie": 130
+//     },
+//     {
+//         "name": "avocado",
+//         "calorie": 130
+//     },
+//     {
+//         "name": "banana",
+//         "calorie": 110
+//     },
+//     {
+//         "name": "cantaloupe",
+//         "calorie": 50
+//     },
+//     {
+//         "name": "grapefruit",
+//         "calorie": 60
+//     }
+
+// ]
+
+// const userFruit = prompt('chawere cilis nomeri ').toLowerCase();
+// let foundFruits = fruits.filter(fruit => fruit.name.toLowerCase() === userFruit);
+
+// if (foundFruits.length > 0) {
+//     foundFruits.forEach(fruit => {
+//         console.log(`${fruit.name} aqvs ${fruit.calorie} kaloria`);
+//     });
+// } else {
+//     console.log(`ver moidzebna xilis saxeli ${userFruit}`);
+// }
+
 
 // ### პროექტი 59 - Employee List Removal - თანამშრომლის სიიდან ამოღება
 // სიაში მონაცემის პოვნა და მათი ამოღება ზოგჯერ გარკვეული კრიტერიუმების საფუძველზე 
