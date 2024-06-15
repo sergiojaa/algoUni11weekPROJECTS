@@ -278,3 +278,31 @@
 
 // დამატებითი გამოწვევა:
 // * ჰკითხეთ მომხმარებელს, როგორ დალაგდეს ჩანაწერები. დაუშვით დახარისხება თარიღის, პოზიციის ან გვარის მიხედვით.
+// me shevkmeni masivi ro ufro gasagebi gamxdariko 
+// const arrNames = [
+//     {
+//         name:'sergi',
+//         lastName:'qaliashvili',
+//         position: 'frontenddev'
+//     },
+//     {
+//         name:'gio',
+//         lastName:'amashukeli',
+//         position: 'footballer'
+//     },
+//     {
+//         name:'nika',
+//         lastName:'shengelia',
+//         position: 'agronomy'
+//     },
+//     {
+//         name:'dato',
+//         lastName:'meparishvili',
+//         position: 'singer'
+//     },
+// ]
+// arrNames.sort((a, b) => a.lastName.localeCompare(b.lastName));
+
+// for (let j of arrNames) {
+//     console.log(`${j.name},${j.lastName},  ${j.position}`);
+// }
