@@ -126,8 +126,8 @@
 // > Jeremy Goodwin
 // ```
 
-// * თუ მომხმარებელი ისეთ სახელს შეიყვანს, რომელიც მასივში არ იძებნება, დაბეჭდეთ შეცდომის შეტყობინება, 
-//რომ ეს სახელი არ არსებობს.
+    // * თუ მომხმარებელი ისეთ სახელს შეიყვანს, რომელიც მასივში არ იძებნება, დაბეჭდეთ შეცდომის შეტყობინება, 
+    //რომ ეს სახელი არ არსებობს.
 // let employees = {
 //     name1:'sergi',
 //     name2:'gio',
@@ -137,7 +137,9 @@
 // let employeeValues = Object.values(employees);
 // console.log(`There are ${employeeValues.length} employees.`);
 // console.log(employeeValues);
-// //delete one of them
+
+// // //delete one of them:
+
 // console.log('Ihave to sent off nika')
 // delete employees.name3
 //  employeeValues = Object.values(employees);
@@ -179,12 +181,49 @@
 // > The minimum is 100.
 // > The maximum is 1000.
 // > The standard deviation is 400.25.
-// ```
-
 // * გამოიყენეთ ციკლები და მასივები Input-ისა და მათემატიკური ოპერაციებისთვის
 // * არ ჩართოთ done ჩანაწერი Input-ების მასივში
 // * გადაიყვანეთ რიცხვითი მნიშვნელობები სტრიქონში (string)
 // * Input-ის ნაწილი გამიჯნეთ კალკულაციებისა და output-ის ნაწილისგან
+
+// function calculateStatistics() {
+//     let times = [];
+
+//     while (true) {
+//         let input = prompt("sheikvane cifrebi an done");
+
+//         if (input.toLowerCase() === 'done') {
+//             break;
+//         }
+
+//         let time = Number(input);
+//         if (!isNaN(time)) {
+//             times.push(time);
+//         } else {
+//             console.log('sheikvane validuri cifri an done');
+//         }
+//     }
+
+//     if (times.length === 0) {
+//         console.log("dro arikoshekvanili");
+//         return;
+//     }
+
+//         let sum = times.reduce((a, b) => a + b, 0);
+//         let average = sum / times.length;
+//         let min = Math.min(...times);
+//         let max = Math.max(...times);
+
+//         let variance = times.reduce((a, b) => a + Math.pow(b - average, 2), 0) / times.length;
+//         let standardDeviation = Math.sqrt(variance);
+
+//         console.log(`sashualo dro : ${average.toFixed(2)} ms`);
+//         console.log(`minimumi : ${min} ms`);
+//         console.log(`Maximum: ${max} ms`);
+//         console.log(`Standard deviation: ${standardDeviation.toFixed(2)} ms`);
+// }
+
+// calculateStatistics();
 
 // ### პროექტი 61 - Filtering Values - მნიშვნელობათა გაფილტვრა
 // ზოგჯერ შეგროვილი მონაცემების გაფილტვრა გვჭირდება. მონაცემთა სტრუქტურები და ციკლები ამ პროცესს აადვილებს. 
@@ -200,9 +239,10 @@
 // * მოახდინეთ input-ის კონვერტაცია მასივში. ბევრ ენაში შესაძლებელია, სტრიქონები მასივებად გადაიქცეს,
 //  რაშიც ჩაშენებული ფუნქციები გვეხმარება (built-in functions). ისინი სტრიქონს მითითებულ დელიმიტერზე
 //   (გამყოფი სიმბოლო ან სიმბოლოთა ერთობლივობა) დაყრდნობით ყოფენ.
-// const enterNumbers = Number(prompt('enter the numbers'))
-// const arr = [...`${enterNumbers}`].map(Number) 
-// console.log(arr.filter((num) => num % 2 === 0))
+// const enterNumbers =prompt('enter the numbers')
+// const arr = enterNumbers.split(' ').map(Number);
+// const evenNumbers = arr.filter(num => num % 2 === 0);
+// console.log(`The even numbers are: ${evenNumbers}`);
 
 // ### პროექტი 62 - Sorting Records - ჩანაწერების დალაგება
 // როდესაც მონაცემებს აკვირდებით, შესაძლოა დაგჭირდეთ მათი დახარისხება, რათა სწრაფად იპოვოთ ის, რასაც ეძებთ,
